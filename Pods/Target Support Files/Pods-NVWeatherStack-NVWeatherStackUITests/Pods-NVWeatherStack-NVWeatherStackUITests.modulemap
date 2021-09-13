@@ -1,0 +1,6 @@
+framework module Pods_NVWeatherStack_NVWeatherStackUITests {
+  umbrella header "Pods-NVWeatherStack-NVWeatherStackUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
