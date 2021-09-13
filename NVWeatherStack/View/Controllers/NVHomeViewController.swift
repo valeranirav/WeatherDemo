@@ -16,7 +16,7 @@ class NVHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.configureViewModel()
         self.setupUI()
     }
@@ -48,7 +48,7 @@ extension NVHomeViewController {
     }
 
     private func configureViewModel() {
-        self.weatherService = NVLocationService()
+        self.weatherService = NVWeatherService()
         self.dataSource = NVHomeViewDataSource()
         self.viewModel = NVHomeViewModel(delegate: self, weatherService: weatherService, dataSource: dataSource)
     }
@@ -68,13 +68,13 @@ extension NVHomeViewController {
 
 // MARK: Data Methods
 extension NVHomeViewController {
-    private func loadLocations(with locationTitle: String?) {
+    private func loadWeatherData(for locationTitle: String?) {
         showIndicator()
         viewModel?.fetchWeatherFor(locationTitle: locationTitle)
     }
 }
 
-// MARK: - NVLocationListViewControllerDelegate Methods
+// MARK: - NVHomeViewControllerDelegate Methods
 extension NVHomeViewController: NVHomeViewControllerDelegate {
     func fetchWeatherDidSucceed() {
 
@@ -93,7 +93,7 @@ extension NVHomeViewController: NVHomeViewControllerDelegate {
 // MARK: UISearchBarDelegate Mwthods
 extension NVHomeViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        self.loadLocations(with: searchBar.searchTextField.text)
+        self.loadWeatherData(for: searchBar.searchTextField.text)
         searchBar.resignFirstResponder()
     }
 }

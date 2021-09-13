@@ -19,7 +19,7 @@ protocol NVWeatherServiceProtocol: AnyObject {
     func fetchCurrentWeatherFor(locationName: String, _ completion: @escaping NVFetchCurrentWeatherDetailCompletion)
 }
 
-final class NVLocationService: NVRequestHandler, NVWeatherServiceProtocol {
+final class NVWeatherService: NVRequestHandler, NVWeatherServiceProtocol {
     var task: URLSessionTask?
 
     /**
