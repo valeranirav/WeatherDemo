@@ -6,7 +6,7 @@
 import Foundation
 
 struct WeatherDataAPI {
-    static let key = "ADD YOUR API KEY"
+    static let key = "ADD_YOUR_API_KEY"
     static let baseURL = "http://api.weatherstack.com"
     static let currentWeatherEndPoint = "/current"
 

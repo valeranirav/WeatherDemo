@@ -31,6 +31,13 @@
 		4D477F6226EF0B390053BDBF /* NVHomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F6126EF0B390053BDBF /* NVHomeViewControllerDelegate.swift */; };
 		4D477F6426EF0D170053BDBF /* NVHomeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F6326EF0D170053BDBF /* NVHomeViewDataSource.swift */; };
 		4D477F6726EF0D710053BDBF /* NVWeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F6626EF0D710053BDBF /* NVWeatherDetailCell.swift */; };
+		4DAA9D5F26EF7C92000C7126 /* NVHomeViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA9D5E26EF7C92000C7126 /* NVHomeViewModelMock.swift */; };
+		4DAA9D6126EF7DA9000C7126 /* NVHomeViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA9D6026EF7DA9000C7126 /* NVHomeViewControllerMock.swift */; };
+		4DAA9D6326EF7E53000C7126 /* NVWeatherServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA9D6226EF7E53000C7126 /* NVWeatherServiceMock.swift */; };
+		4DAA9D6526EF808A000C7126 /* NVHomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA9D6426EF808A000C7126 /* NVHomeViewModelTests.swift */; };
+		4DAA9D6726EF8786000C7126 /* NVHomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA9D6626EF8786000C7126 /* NVHomeViewControllerTests.swift */; };
+		4DAA9D6A26EF8B22000C7126 /* NVWeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA9D6926EF8B22000C7126 /* NVWeatherServiceTests.swift */; };
+		4DAA9D6D26EF973B000C7126 /* NVHomeViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA9D6C26EF973B000C7126 /* NVHomeViewDataSourceTests.swift */; };
 		50BB7C3C099E6429736A6CFD /* Pods_NVWeatherStack_NVWeatherStackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C034136FE4086CB9FC9FF7 /* Pods_NVWeatherStack_NVWeatherStackUITests.framework */; };
 		C74D34BB8897057AC49F9BE1 /* Pods_NVWeatherStackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFE5EA3DD0F77896F91E058 /* Pods_NVWeatherStackTests.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +90,13 @@
 		4D477F6126EF0B390053BDBF /* NVHomeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVHomeViewControllerDelegate.swift; sourceTree = "<group>"; };
 		4D477F6326EF0D170053BDBF /* NVHomeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVHomeViewDataSource.swift; sourceTree = "<group>"; };
 		4D477F6626EF0D710053BDBF /* NVWeatherDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVWeatherDetailCell.swift; sourceTree = "<group>"; };
+		4DAA9D5E26EF7C92000C7126 /* NVHomeViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVHomeViewModelMock.swift; sourceTree = "<group>"; };
+		4DAA9D6026EF7DA9000C7126 /* NVHomeViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVHomeViewControllerMock.swift; sourceTree = "<group>"; };
+		4DAA9D6226EF7E53000C7126 /* NVWeatherServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVWeatherServiceMock.swift; sourceTree = "<group>"; };
+		4DAA9D6426EF808A000C7126 /* NVHomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVHomeViewModelTests.swift; sourceTree = "<group>"; };
+		4DAA9D6626EF8786000C7126 /* NVHomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVHomeViewControllerTests.swift; sourceTree = "<group>"; };
+		4DAA9D6926EF8B22000C7126 /* NVWeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVWeatherServiceTests.swift; sourceTree = "<group>"; };
+		4DAA9D6C26EF973B000C7126 /* NVHomeViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVHomeViewDataSourceTests.swift; sourceTree = "<group>"; };
 		548B44307CFA45010FDFC83F /* Pods-NVWeatherStack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVWeatherStack.release.xcconfig"; path = "Target Support Files/Pods-NVWeatherStack/Pods-NVWeatherStack.release.xcconfig"; sourceTree = "<group>"; };
 		8CFF9AC5824EAFBFE96AA25D /* Pods-NVWeatherStackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVWeatherStackTests.debug.xcconfig"; path = "Target Support Files/Pods-NVWeatherStackTests/Pods-NVWeatherStackTests.debug.xcconfig"; sourceTree = "<group>"; };
 		91B15FFF59CF9D245E36E2E5 /* Pods-NVWeatherStack-NVWeatherStackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVWeatherStack-NVWeatherStackUITests.debug.xcconfig"; path = "Target Support Files/Pods-NVWeatherStack-NVWeatherStackUITests/Pods-NVWeatherStack-NVWeatherStackUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +179,11 @@
 		4D477F2326EEF4DB0053BDBF /* NVWeatherStackTests */ = {
 			isa = PBXGroup;
 			children = (
+				4DAA9D5826EF7C6A000C7126 /* Mocks */,
+				4DAA9D5D26EF7C6A000C7126 /* ViewControllers */,
+				4DAA9D5726EF7C69000C7126 /* ViewModels */,
+				4DAA9D6B26EF96FE000C7126 /* DataSources */,
+				4DAA9D6826EF8B11000C7126 /* Services */,
 				4D477F2426EEF4DB0053BDBF /* NVWeatherStackTests.swift */,
 				4D477F2626EEF4DB0053BDBF /* Info.plist */,
 			);
@@ -277,6 +296,73 @@
 			);
 			path = Cell;
 			sourceTree = "<group>";
+		};
+		4DAA9D5726EF7C69000C7126 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4DAA9D6426EF808A000C7126 /* NVHomeViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4DAA9D5826EF7C6A000C7126 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4DAA9D5926EF7C6A000C7126 /* ViewModels */,
+				4DAA9D5B26EF7C6A000C7126 /* Controllers */,
+				4DAA9D5C26EF7C6A000C7126 /* Services */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4DAA9D5926EF7C6A000C7126 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4DAA9D5E26EF7C92000C7126 /* NVHomeViewModelMock.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4DAA9D5B26EF7C6A000C7126 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DAA9D6026EF7DA9000C7126 /* NVHomeViewControllerMock.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4DAA9D5C26EF7C6A000C7126 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4DAA9D6226EF7E53000C7126 /* NVWeatherServiceMock.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4DAA9D5D26EF7C6A000C7126 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DAA9D6626EF8786000C7126 /* NVHomeViewControllerTests.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4DAA9D6826EF8B11000C7126 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4DAA9D6926EF8B22000C7126 /* NVWeatherServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4DAA9D6B26EF96FE000C7126 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				4DAA9D6C26EF973B000C7126 /* NVHomeViewDataSourceTests.swift */,
+			);
+			name = DataSources;
+			path = NVWeatherStackTests/DataSources;
+			sourceTree = SOURCE_ROOT;
 		};
 		819976096901E64EF6FA1EB1 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -546,7 +632,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DAA9D6D26EF973B000C7126 /* NVHomeViewDataSourceTests.swift in Sources */,
+				4DAA9D6326EF7E53000C7126 /* NVWeatherServiceMock.swift in Sources */,
+				4DAA9D6A26EF8B22000C7126 /* NVWeatherServiceTests.swift in Sources */,
+				4DAA9D6126EF7DA9000C7126 /* NVHomeViewControllerMock.swift in Sources */,
 				4D477F2526EEF4DB0053BDBF /* NVWeatherStackTests.swift in Sources */,
+				4DAA9D5F26EF7C92000C7126 /* NVHomeViewModelMock.swift in Sources */,
+				4DAA9D6526EF808A000C7126 /* NVHomeViewModelTests.swift in Sources */,
+				4DAA9D6726EF8786000C7126 /* NVHomeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
