@@ -16,7 +16,7 @@ class NVHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         self.configureViewModel()
         self.setupUI()
     }

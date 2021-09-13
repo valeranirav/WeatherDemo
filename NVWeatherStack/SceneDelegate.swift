@@ -2,8 +2,6 @@
 //  SceneDelegate.swift
 //  NVWeatherStack
 //
-//  Created by Nirav Valera on 13/09/21.
-//
 
 import UIKit
 
