@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C25312C5662E18993675E7B /* Pods_NVWeatherStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3096DC6337F7CACBB8E4B1 /* Pods_NVWeatherStack.framework */; };
+		4D477F0E26EEF4D80053BDBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F0D26EEF4D80053BDBF /* AppDelegate.swift */; };
+		4D477F1026EEF4D80053BDBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F0F26EEF4D80053BDBF /* SceneDelegate.swift */; };
+		4D477F1526EEF4D80053BDBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D477F1326EEF4D80053BDBF /* Main.storyboard */; };
+		4D477F1726EEF4DA0053BDBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D477F1626EEF4DA0053BDBF /* Assets.xcassets */; };
+		4D477F1A26EEF4DA0053BDBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D477F1826EEF4DA0053BDBF /* LaunchScreen.storyboard */; };
+		4D477F2526EEF4DB0053BDBF /* NVWeatherStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F2426EEF4DB0053BDBF /* NVWeatherStackTests.swift */; };
+		4D477F3026EEF4DB0053BDBF /* NVWeatherStackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F2F26EEF4DB0053BDBF /* NVWeatherStackUITests.swift */; };
+		4D477F4726EEF9740053BDBF /* NVHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F4126EEF9740053BDBF /* NVHomeViewController.swift */; };
+		4D477F4926EEFBD90053BDBF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F4826EEFBD90053BDBF /* Reachability.swift */; };
+		4D477F4B26EEFC2C0053BDBF /* NVAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F4A26EEFC2C0053BDBF /* NVAlertController.swift */; };
+		4D477F4D26EEFC6F0053BDBF /* NVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F4C26EEFC6F0053BDBF /* NVError.swift */; };
+		4D477F4F26EEFC890053BDBF /* NVRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F4E26EEFC890053BDBF /* NVRequestFactory.swift */; };
+		4D477F5126EEFCA60053BDBF /* NVRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F5026EEFCA60053BDBF /* NVRequestService.swift */; };
+		4D477F5326EEFCBD0053BDBF /* NVRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F5226EEFCBD0053BDBF /* NVRequestHandler.swift */; };
+		4D477F5526EEFD760053BDBF /* NVWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F5426EEFD760053BDBF /* NVWeatherService.swift */; };
+		4D477F5726EEFE030053BDBF /* NVConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F5626EEFE030053BDBF /* NVConstants.swift */; };
+		4D477F5926EF00880053BDBF /* NVCurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F5826EF00880053BDBF /* NVCurrentWeatherModel.swift */; };
+		4D477F5B26EF09530053BDBF /* NVDynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F5A26EF09530053BDBF /* NVDynamicValue.swift */; };
+		4D477F5D26EF09800053BDBF /* NVGenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F5C26EF09800053BDBF /* NVGenericDataSource.swift */; };
+		4D477F5F26EF0A890053BDBF /* NVHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F5E26EF0A890053BDBF /* NVHomeViewModel.swift */; };
+		4D477F6226EF0B390053BDBF /* NVHomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F6126EF0B390053BDBF /* NVHomeViewControllerDelegate.swift */; };
+		4D477F6426EF0D170053BDBF /* NVHomeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F6326EF0D170053BDBF /* NVHomeViewDataSource.swift */; };
+		4D477F6726EF0D710053BDBF /* NVWeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D477F6626EF0D710053BDBF /* NVWeatherDetailCell.swift */; };
+		50BB7C3C099E6429736A6CFD /* Pods_NVWeatherStack_NVWeatherStackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C034136FE4086CB9FC9FF7 /* Pods_NVWeatherStack_NVWeatherStackUITests.framework */; };
+		C74D34BB8897057AC49F9BE1 /* Pods_NVWeatherStackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFE5EA3DD0F77896F91E058 /* Pods_NVWeatherStackTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D477F2126EEF4DB0053BDBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D477F0226EEF4D80053BDBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D477F0926EEF4D80053BDBF;
+			remoteInfo = NVWeatherStack;
+		};
+		4D477F2C26EEF4DB0053BDBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D477F0226EEF4D80053BDBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D477F0926EEF4D80053BDBF;
+			remoteInfo = NVWeatherStack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F348EDE945B949D67099A0D /* Pods-NVWeatherStackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVWeatherStackTests.release.xcconfig"; path = "Target Support Files/Pods-NVWeatherStackTests/Pods-NVWeatherStackTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D477F0A26EEF4D80053BDBF /* NVWeatherStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVWeatherStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D477F0D26EEF4D80053BDBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D477F0F26EEF4D80053BDBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4D477F1426EEF4D80053BDBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D477F1626EEF4DA0053BDBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D477F1926EEF4DA0053BDBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D477F1B26EEF4DA0053BDBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D477F2026EEF4DB0053BDBF /* NVWeatherStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVWeatherStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D477F2426EEF4DB0053BDBF /* NVWeatherStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVWeatherStackTests.swift; sourceTree = "<group>"; };
+		4D477F2626EEF4DB0053BDBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D477F2B26EEF4DB0053BDBF /* NVWeatherStackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVWeatherStackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D477F2F26EEF4DB0053BDBF /* NVWeatherStackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVWeatherStackUITests.swift; sourceTree = "<group>"; };
+		4D477F3126EEF4DB0053BDBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D477F4126EEF9740053BDBF /* NVHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVHomeViewController.swift; sourceTree = "<group>"; };
+		4D477F4826EEFBD90053BDBF /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4D477F4A26EEFC2C0053BDBF /* NVAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVAlertController.swift; sourceTree = "<group>"; };
+		4D477F4C26EEFC6F0053BDBF /* NVError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVError.swift; sourceTree = "<group>"; };
+		4D477F4E26EEFC890053BDBF /* NVRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVRequestFactory.swift; sourceTree = "<group>"; };
+		4D477F5026EEFCA60053BDBF /* NVRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVRequestService.swift; sourceTree = "<group>"; };
+		4D477F5226EEFCBD0053BDBF /* NVRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVRequestHandler.swift; sourceTree = "<group>"; };
+		4D477F5426EEFD760053BDBF /* NVWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVWeatherService.swift; sourceTree = "<group>"; };
+		4D477F5626EEFE030053BDBF /* NVConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVConstants.swift; sourceTree = "<group>"; };
+		4D477F5826EF00880053BDBF /* NVCurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVCurrentWeatherModel.swift; sourceTree = "<group>"; };
+		4D477F5A26EF09530053BDBF /* NVDynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVDynamicValue.swift; sourceTree = "<group>"; };
+		4D477F5C26EF09800053BDBF /* NVGenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVGenericDataSource.swift; sourceTree = "<group>"; };
+		4D477F5E26EF0A890053BDBF /* NVHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVHomeViewModel.swift; sourceTree = "<group>"; };
+		4D477F6126EF0B390053BDBF /* NVHomeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVHomeViewControllerDelegate.swift; sourceTree = "<group>"; };
+		4D477F6326EF0D170053BDBF /* NVHomeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVHomeViewDataSource.swift; sourceTree = "<group>"; };
+		4D477F6626EF0D710053BDBF /* NVWeatherDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVWeatherDetailCell.swift; sourceTree = "<group>"; };
+		548B44307CFA45010FDFC83F /* Pods-NVWeatherStack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVWeatherStack.release.xcconfig"; path = "Target Support Files/Pods-NVWeatherStack/Pods-NVWeatherStack.release.xcconfig"; sourceTree = "<group>"; };
+		8CFF9AC5824EAFBFE96AA25D /* Pods-NVWeatherStackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVWeatherStackTests.debug.xcconfig"; path = "Target Support Files/Pods-NVWeatherStackTests/Pods-NVWeatherStackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91B15FFF59CF9D245E36E2E5 /* Pods-NVWeatherStack-NVWeatherStackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVWeatherStack-NVWeatherStackUITests.debug.xcconfig"; path = "Target Support Files/Pods-NVWeatherStack-NVWeatherStackUITests/Pods-NVWeatherStack-NVWeatherStackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		93F563030981B673D17C46F1 /* Pods-NVWeatherStack-NVWeatherStackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVWeatherStack-NVWeatherStackUITests.release.xcconfig"; path = "Target Support Files/Pods-NVWeatherStack-NVWeatherStackUITests/Pods-NVWeatherStack-NVWeatherStackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A3096DC6337F7CACBB8E4B1 /* Pods_NVWeatherStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NVWeatherStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACFE5EA3DD0F77896F91E058 /* Pods_NVWeatherStackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NVWeatherStackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C034136FE4086CB9FC9FF7 /* Pods_NVWeatherStack_NVWeatherStackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NVWeatherStack_NVWeatherStackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CAB443737C7DD7A47EF1D8 /* Pods-NVWeatherStack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVWeatherStack.debug.xcconfig"; path = "Target Support Files/Pods-NVWeatherStack/Pods-NVWeatherStack.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D477F0726EEF4D80053BDBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C25312C5662E18993675E7B /* Pods_NVWeatherStack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D477F1D26EEF4DB0053BDBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74D34BB8897057AC49F9BE1 /* Pods_NVWeatherStackTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D477F2826EEF4DB0053BDBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50BB7C3C099E6429736A6CFD /* Pods_NVWeatherStack_NVWeatherStackUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D477F0126EEF4D80053BDBF = {
+			isa = PBXGroup;
+			children = (
+				4D477F0C26EEF4D80053BDBF /* NVWeatherStack */,
+				4D477F2326EEF4DB0053BDBF /* NVWeatherStackTests */,
+				4D477F2E26EEF4DB0053BDBF /* NVWeatherStackUITests */,
+				4D477F0B26EEF4D80053BDBF /* Products */,
+				E1241A1F6D6B1AE3CD2A18A5 /* Pods */,
+				819976096901E64EF6FA1EB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D477F0B26EEF4D80053BDBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F0A26EEF4D80053BDBF /* NVWeatherStack.app */,
+				4D477F2026EEF4DB0053BDBF /* NVWeatherStackTests.xctest */,
+				4D477F2B26EEF4DB0053BDBF /* NVWeatherStackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D477F0C26EEF4D80053BDBF /* NVWeatherStack */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F5626EEFE030053BDBF /* NVConstants.swift */,
+				4D477F3D26EEF9740053BDBF /* Helper */,
+				4D477F3E26EEF9740053BDBF /* Model */,
+				4D477F4426EEF9740053BDBF /* Service */,
+				4D477F3F26EEF9740053BDBF /* View */,
+				4D477F4226EEF9740053BDBF /* ViewModel */,
+				4D477F0D26EEF4D80053BDBF /* AppDelegate.swift */,
+				4D477F0F26EEF4D80053BDBF /* SceneDelegate.swift */,
+				4D477F1326EEF4D80053BDBF /* Main.storyboard */,
+				4D477F1626EEF4DA0053BDBF /* Assets.xcassets */,
+				4D477F1826EEF4DA0053BDBF /* LaunchScreen.storyboard */,
+				4D477F1B26EEF4DA0053BDBF /* Info.plist */,
+			);
+			path = NVWeatherStack;
+			sourceTree = "<group>";
+		};
+		4D477F2326EEF4DB0053BDBF /* NVWeatherStackTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F2426EEF4DB0053BDBF /* NVWeatherStackTests.swift */,
+				4D477F2626EEF4DB0053BDBF /* Info.plist */,
+			);
+			path = NVWeatherStackTests;
+			sourceTree = "<group>";
+		};
+		4D477F2E26EEF4DB0053BDBF /* NVWeatherStackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F2F26EEF4DB0053BDBF /* NVWeatherStackUITests.swift */,
+				4D477F3126EEF4DB0053BDBF /* Info.plist */,
+			);
+			path = NVWeatherStackUITests;
+			sourceTree = "<group>";
+		};
+		4D477F3D26EEF9740053BDBF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F4826EEFBD90053BDBF /* Reachability.swift */,
+				4D477F4A26EEFC2C0053BDBF /* NVAlertController.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4D477F3E26EEF9740053BDBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F5826EF00880053BDBF /* NVCurrentWeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D477F3F26EEF9740053BDBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F6526EF0D350053BDBF /* Cell */,
+				4D477F4026EEF9740053BDBF /* Controllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D477F4026EEF9740053BDBF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F6026EF0B180053BDBF /* Delegate */,
+				4D477F4126EEF9740053BDBF /* NVHomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D477F4226EEF9740053BDBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F4326EEF9740053BDBF /* DataSource */,
+				4D477F5E26EF0A890053BDBF /* NVHomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4D477F4326EEF9740053BDBF /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F5A26EF09530053BDBF /* NVDynamicValue.swift */,
+				4D477F5C26EF09800053BDBF /* NVGenericDataSource.swift */,
+				4D477F6326EF0D170053BDBF /* NVHomeViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		4D477F4426EEF9740053BDBF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F4526EEF9740053BDBF /* Result */,
+				4D477F4626EEF9740053BDBF /* Network */,
+				4D477F5426EEFD760053BDBF /* NVWeatherService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4D477F4526EEF9740053BDBF /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F4C26EEFC6F0053BDBF /* NVError.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		4D477F4626EEF9740053BDBF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F4E26EEFC890053BDBF /* NVRequestFactory.swift */,
+				4D477F5026EEFCA60053BDBF /* NVRequestService.swift */,
+				4D477F5226EEFCBD0053BDBF /* NVRequestHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4D477F6026EF0B180053BDBF /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F6126EF0B390053BDBF /* NVHomeViewControllerDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		4D477F6526EF0D350053BDBF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D477F6626EF0D710053BDBF /* NVWeatherDetailCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		819976096901E64EF6FA1EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A3096DC6337F7CACBB8E4B1 /* Pods_NVWeatherStack.framework */,
+				D6C034136FE4086CB9FC9FF7 /* Pods_NVWeatherStack_NVWeatherStackUITests.framework */,
+				ACFE5EA3DD0F77896F91E058 /* Pods_NVWeatherStackTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1241A1F6D6B1AE3CD2A18A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAB443737C7DD7A47EF1D8 /* Pods-NVWeatherStack.debug.xcconfig */,
+				548B44307CFA45010FDFC83F /* Pods-NVWeatherStack.release.xcconfig */,
+				91B15FFF59CF9D245E36E2E5 /* Pods-NVWeatherStack-NVWeatherStackUITests.debug.xcconfig */,
+				93F563030981B673D17C46F1 /* Pods-NVWeatherStack-NVWeatherStackUITests.release.xcconfig */,
+				8CFF9AC5824EAFBFE96AA25D /* Pods-NVWeatherStackTests.debug.xcconfig */,
+				2F348EDE945B949D67099A0D /* Pods-NVWeatherStackTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D477F0926EEF4D80053BDBF /* NVWeatherStack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D477F3426EEF4DB0053BDBF /* Build configuration list for PBXNativeTarget "NVWeatherStack" */;
+			buildPhases = (
+				077E5DB51D8119635E98D582 /* [CP] Check Pods Manifest.lock */,
+				4D477F0626EEF4D80053BDBF /* Sources */,
+				4D477F0726EEF4D80053BDBF /* Frameworks */,
+				4D477F0826EEF4D80053BDBF /* Resources */,
+				4D477F6826EF232A0053BDBF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVWeatherStack;
+			productName = NVWeatherStack;
+			productReference = 4D477F0A26EEF4D80053BDBF /* NVWeatherStack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D477F1F26EEF4DB0053BDBF /* NVWeatherStackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D477F3726EEF4DB0053BDBF /* Build configuration list for PBXNativeTarget "NVWeatherStackTests" */;
+			buildPhases = (
+				9F6B91AF1782393364DD7086 /* [CP] Check Pods Manifest.lock */,
+				4D477F1C26EEF4DB0053BDBF /* Sources */,
+				4D477F1D26EEF4DB0053BDBF /* Frameworks */,
+				4D477F1E26EEF4DB0053BDBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D477F2226EEF4DB0053BDBF /* PBXTargetDependency */,
+			);
+			name = NVWeatherStackTests;
+			productName = NVWeatherStackTests;
+			productReference = 4D477F2026EEF4DB0053BDBF /* NVWeatherStackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D477F2A26EEF4DB0053BDBF /* NVWeatherStackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D477F3A26EEF4DB0053BDBF /* Build configuration list for PBXNativeTarget "NVWeatherStackUITests" */;
+			buildPhases = (
+				5767E15ECBF046064E0FB139 /* [CP] Check Pods Manifest.lock */,
+				4D477F2726EEF4DB0053BDBF /* Sources */,
+				4D477F2826EEF4DB0053BDBF /* Frameworks */,
+				4D477F2926EEF4DB0053BDBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D477F2D26EEF4DB0053BDBF /* PBXTargetDependency */,
+			);
+			name = NVWeatherStackUITests;
+			productName = NVWeatherStackUITests;
+			productReference = 4D477F2B26EEF4DB0053BDBF /* NVWeatherStackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D477F0226EEF4D80053BDBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4D477F0926EEF4D80053BDBF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					4D477F1F26EEF4DB0053BDBF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 4D477F0926EEF4D80053BDBF;
+					};
+					4D477F2A26EEF4DB0053BDBF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 4D477F0926EEF4D80053BDBF;
+					};
+				};
+			};
+			buildConfigurationList = 4D477F0526EEF4D80053BDBF /* Build configuration list for PBXProject "NVWeatherStack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D477F0126EEF4D80053BDBF;
+			productRefGroup = 4D477F0B26EEF4D80053BDBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D477F0926EEF4D80053BDBF /* NVWeatherStack */,
+				4D477F1F26EEF4DB0053BDBF /* NVWeatherStackTests */,
+				4D477F2A26EEF4DB0053BDBF /* NVWeatherStackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D477F0826EEF4D80053BDBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D477F1A26EEF4DA0053BDBF /* LaunchScreen.storyboard in Resources */,
+				4D477F1726EEF4DA0053BDBF /* Assets.xcassets in Resources */,
+				4D477F1526EEF4D80053BDBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D477F1E26EEF4DB0053BDBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D477F2926EEF4DB0053BDBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		077E5DB51D8119635E98D582 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NVWeatherStack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D477F6826EF232A0053BDBF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		5767E15ECBF046064E0FB139 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NVWeatherStack-NVWeatherStackUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6B91AF1782393364DD7086 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NVWeatherStackTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D477F0626EEF4D80053BDBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D477F4D26EEFC6F0053BDBF /* NVError.swift in Sources */,
+				4D477F0E26EEF4D80053BDBF /* AppDelegate.swift in Sources */,
+				4D477F5D26EF09800053BDBF /* NVGenericDataSource.swift in Sources */,
+				4D477F5726EEFE030053BDBF /* NVConstants.swift in Sources */,
+				4D477F6226EF0B390053BDBF /* NVHomeViewControllerDelegate.swift in Sources */,
+				4D477F6426EF0D170053BDBF /* NVHomeViewDataSource.swift in Sources */,
+				4D477F1026EEF4D80053BDBF /* SceneDelegate.swift in Sources */,
+				4D477F6726EF0D710053BDBF /* NVWeatherDetailCell.swift in Sources */,
+				4D477F4B26EEFC2C0053BDBF /* NVAlertController.swift in Sources */,
+				4D477F5F26EF0A890053BDBF /* NVHomeViewModel.swift in Sources */,
+				4D477F4926EEFBD90053BDBF /* Reachability.swift in Sources */,
+				4D477F5B26EF09530053BDBF /* NVDynamicValue.swift in Sources */,
+				4D477F5326EEFCBD0053BDBF /* NVRequestHandler.swift in Sources */,
+				4D477F4726EEF9740053BDBF /* NVHomeViewController.swift in Sources */,
+				4D477F4F26EEFC890053BDBF /* NVRequestFactory.swift in Sources */,
+				4D477F5526EEFD760053BDBF /* NVWeatherService.swift in Sources */,
+				4D477F5926EF00880053BDBF /* NVCurrentWeatherModel.swift in Sources */,
+				4D477F5126EEFCA60053BDBF /* NVRequestService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D477F1C26EEF4DB0053BDBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D477F2526EEF4DB0053BDBF /* NVWeatherStackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D477F2726EEF4DB0053BDBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D477F3026EEF4DB0053BDBF /* NVWeatherStackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D477F2226EEF4DB0053BDBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D477F0926EEF4D80053BDBF /* NVWeatherStack */;
+			targetProxy = 4D477F2126EEF4DB0053BDBF /* PBXContainerItemProxy */;
+		};
+		4D477F2D26EEF4DB0053BDBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D477F0926EEF4D80053BDBF /* NVWeatherStack */;
+			targetProxy = 4D477F2C26EEF4DB0053BDBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D477F1326EEF4D80053BDBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D477F1426EEF4D80053BDBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D477F1826EEF4DA0053BDBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D477F1926EEF4DA0053BDBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D477F3226EEF4DB0053BDBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D477F3326EEF4DB0053BDBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D477F3526EEF4DB0053BDBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7CAB443737C7DD7A47EF1D8 /* Pods-NVWeatherStack.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVWeatherStack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVWeatherStack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D477F3626EEF4DB0053BDBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548B44307CFA45010FDFC83F /* Pods-NVWeatherStack.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVWeatherStack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVWeatherStack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D477F3826EEF4DB0053BDBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CFF9AC5824EAFBFE96AA25D /* Pods-NVWeatherStackTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVWeatherStackTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVWeatherStackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NVWeatherStack.app/NVWeatherStack";
+			};
+			name = Debug;
+		};
+		4D477F3926EEF4DB0053BDBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F348EDE945B949D67099A0D /* Pods-NVWeatherStackTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVWeatherStackTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVWeatherStackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NVWeatherStack.app/NVWeatherStack";
+			};
+			name = Release;
+		};
+		4D477F3B26EEF4DB0053BDBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B15FFF59CF9D245E36E2E5 /* Pods-NVWeatherStack-NVWeatherStackUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVWeatherStackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVWeatherStackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NVWeatherStack;
+			};
+			name = Debug;
+		};
+		4D477F3C26EEF4DB0053BDBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F563030981B673D17C46F1 /* Pods-NVWeatherStack-NVWeatherStackUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVWeatherStackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVWeatherStackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NVWeatherStack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D477F0526EEF4D80053BDBF /* Build configuration list for PBXProject "NVWeatherStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D477F3226EEF4DB0053BDBF /* Debug */,
+				4D477F3326EEF4DB0053BDBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D477F3426EEF4DB0053BDBF /* Build configuration list for PBXNativeTarget "NVWeatherStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D477F3526EEF4DB0053BDBF /* Debug */,
+				4D477F3626EEF4DB0053BDBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D477F3726EEF4DB0053BDBF /* Build configuration list for PBXNativeTarget "NVWeatherStackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D477F3826EEF4DB0053BDBF /* Debug */,
+				4D477F3926EEF4DB0053BDBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D477F3A26EEF4DB0053BDBF /* Build configuration list for PBXNativeTarget "NVWeatherStackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D477F3B26EEF4DB0053BDBF /* Debug */,
+				4D477F3C26EEF4DB0053BDBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D477F0226EEF4D80053BDBF /* Project object */;
+}
