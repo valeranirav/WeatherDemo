@@ -7,11 +7,11 @@ import Foundation
 
 typealias NVFetchCurrentWeatherDetailCompletion = ((Result<NVCurrentWeatherModel, NVError>) -> Void)
 
-/// Types adopting the `NVLocationServiceProtocol` protocol can be used to fetch location data
+/// Types adopting the `NVWeatherServiceProtocol` protocol can be used to fetch weather data
 
 protocol NVWeatherServiceProtocol: AnyObject {
     /**
-     Fetch locations with location name
+     Fetch weather data for location name
 
      - parameter locationName: Represents the name of the location
      - parameter completion:   A closure to be executed once the weather details are fetched.
@@ -23,11 +23,11 @@ final class NVLocationService: NVRequestHandler, NVWeatherServiceProtocol {
     var task: URLSessionTask?
 
     /**
-        Fetch locations with lattitude and longitude.
+     Fetch weather data for location name
 
-        - parameter lattLong:   Represents lattitude, longitude of the location
-        - parameter completion: A closure to be executed once the locations are fetched.
-    */
+     - parameter locationName: Represents the name of the location
+     - parameter completion:   A closure to be executed once the weather details are fetched.
+     */
 
     func fetchCurrentWeatherFor(locationName: String, _ completion: @escaping NVFetchCurrentWeatherDetailCompletion) {
         if let locationParam = "\(WeatherDataAPI.QueryParameter.locationName)\(locationName)".addingPercentEncoding(

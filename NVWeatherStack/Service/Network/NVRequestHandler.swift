@@ -12,9 +12,9 @@ class NVRequestHandler {
     /**
         Handles the response data of the request
 
-        - parameter completion: The closure called when the `Data` parsing using `NVParserHelper` is completed
+        - parameter completion: The closure called when the `Data` parsing is completed
 
-        - returns: A closure which takes one argument: NVResult enum
+        - returns: A closure which takes one argument: Result enum
     */
     func networkResult<T: Decodable> (
         completion: @escaping ((Result<T, NVError>) -> Void)) -> ((Result<Data, NVError>) -> Void
